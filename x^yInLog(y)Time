@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    long int res=1;
+    scanf("%d %d",&x,&y);
+    while(y>0){
+        if(y%2==1) res*=x;
+        x*=x;
+        y>>=1;
+    }
+    printf("%ld",res);
+}
