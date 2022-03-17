@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Main {
     public static long gcd(long p,long k){
         if(k==0) return p;
-        return myGcd(k, p%k);
+        return gcd(k, p%k);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
